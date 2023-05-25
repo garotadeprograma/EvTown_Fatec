@@ -1,0 +1,146 @@
+
+body, h1, h2, p, ul, li, a {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: "Nunito", Helvetica, Arial, sans-serif;
+    color: #5E2019;
+    background-color: #F5F5F5;
+}
+
+
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* menu */
+.menu {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* align-items: center; */
+    border-bottom: solid 2px #ce9a94;
+}
+
+    .menu a {
+        color: #DF4A3A;
+    }
+
+.menu-logo a {
+    font-family: 'Concert One', cursive;
+    font-weight: bold;
+    line-height: 35px;
+    color: #DF4A3A;
+    font-size: 3em;
+    margin: 0 10px; /*colocar um espaço das bordas*/
+}
+
+.menu-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-nav a {
+    font-size: 1.25em;
+    font-family: 'Concert One', cursive;
+    display: block;
+    padding: 10px;
+}
+
+.menu-nav a:hover {
+    color: #5E2019;
+}
+.newsletter {
+    background: #df4b3a21;
+    padding: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    color: #5E2019;    
+    align-self: flex-end;
+}
+
+.newsletter-info {
+    flex: 1 1 260px;
+    margin: 0 10px;
+}
+
+    .newsletter-info h1 {
+        font-size: 2.25em;
+    }
+
+    .newsletter-info p {
+        font-size: 1.25em;
+        font-style: italic;
+        max-width: 230px;
+        margin-bottom: 10px;
+        color: #5E2019;
+    }
+
+    .newsletter-form {
+        flex: 2 1 200px;
+        margin-bottom: 10px;
+        align-self: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    .newsletter-form input {
+        flex: 3 1 200px;
+        max-width: 220px;
+        font-size: 1.25em;
+        color: #DF4A3A;
+        font-style: italic;
+        border: 4px solid #DF4A3A;
+        background: transparent;
+        padding: 15px 10px;
+        margin: 0 0 10px 0;
+        border-radius: 0px;
+        height: 60px;
+    }
+
+    .newsletter-form button {
+        flex: 1 1 200px;
+        max-width: 220px;
+        height: 60px;
+        font-size: 2em;
+        font-weight: bold;
+        text-transform: uppercase;
+        background: #DF4A3A;
+        color: white;
+        margin: 0 10px 10px 0;
+        cursor: pointer;
+        border: 0px;
+        padding: 15px 10px;
+    }
+
+    .center-info {
+        display: flex;
+        flex-wrap: wrap;
+        height: 500px;
+        max-width: 800px;
+        /* border: 3px solid #5E2019; */
+        margin: auto;
+        margin-top: 50px;
+        background-color: #df4b3a18;
+    }
+    

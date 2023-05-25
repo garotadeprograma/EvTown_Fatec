@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - EvTown</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/home-style.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/login-style.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/EvTown.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header class="menu-bg">
+        <div class="menu">
+
+            <div class="menu-logo">                
+                <a href="#">Ev.Town</a>
+            </div>
+
+            <nav class="menu-nav">
+                <ul>
+                    <li><a href="#">Criar Conta</a></li>
+                    <li><a href="#">Soluções</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a asp-controller="Login" asp-action="Index">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div>
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+        
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "ixfD0kblcdfuAnDEWciHP8aCzngLAgC0cVohhme9X5eTSnFg0ZGFleESa79UttXaBgsTZ7F316qT6qu0cf0CJg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\acsil\\OneDrive\\Documentos\\_PROGRAMACAO\\Faculdade\\trabalho braz\\mvc\\EvTown\\EvTown\\EvTown.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\acsil\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\acsil\\.nuget\\packages\\npgsql\\7.0.4\\npgsql.7.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}

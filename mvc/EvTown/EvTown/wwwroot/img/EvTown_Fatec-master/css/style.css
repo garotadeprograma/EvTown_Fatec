@@ -1,0 +1,606 @@
+body, h1, h2, p, ul, li, a {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: "Nunito", Helvetica, Arial, sans-serif;
+    color: #5E2019;
+    background-color: #F5F5F5;
+}
+
+
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* menu */
+.menu {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* align-items: center; */
+    border-bottom: solid 2px #ce9a94;
+}
+
+.menu a {
+    color: #DF4A3A;
+}
+
+.menu-logo a {
+    font-family: 'Concert One', cursive;
+    font-weight: bold;    
+    line-height: 35px;
+    color: #DF4A3A;
+    font-size: 3em;
+    margin: 0 10px; /*colocar um espaço das bordas*/    
+}
+
+.menu-nav ul {    
+    display: flex;
+    flex-wrap: wrap;    
+}
+
+.menu-nav a {
+    font-size: 1.25em;
+    font-family: 'Concert One', cursive;
+    display: block;
+    padding: 10px;
+}
+
+.menu-nav a:hover {
+    color: #5E2019;
+}
+
+/*slogan*/
+
+.slogan {
+    max-width: 960px;
+    font-size: 3.5em;
+    line-height: 1;
+    margin: 0 auto;
+    padding: 60px 10px;
+    color: #5E2019;
+}
+
+/* sobre */
+.sobre {
+    border-top: 2px solid #5E2019;
+    border-bottom: 2px solid #5E2019;
+    display: flex;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 60px 10px;  
+    align-items: center;  
+    flex-wrap: wrap;
+}
+
+.sobre-info {
+    flex: 2 1 300px;
+    margin: 0 10px;
+}
+
+.sobre-info h1 {
+    color: #DF4A3A;
+    font-size: 3em;
+    margin-bottom: .5em;
+}
+
+.sobre-info p {
+    color: #5E2019;  
+    line-height: 1.4em;
+    margin-bottom: 1em;
+    font-size: 1.1em;
+}
+.sobre-info img {
+    flex: 1 1 160px;
+    margin: 0 10px;
+}
+
+/* solucoes */
+.solucoes {
+    max-width: 960px;
+    margin: 60px auto;
+    color: #5E2019;
+}
+
+.solucoes h1 {
+    font-size: 3em;
+    margin: 0 10px 60px 10px;        
+}
+
+.solucoes h1::after {
+    content: '';
+    display: block;
+    width: 4em;
+    height: .05em;
+    background-color: #5E2019;
+    
+}
+
+.solucoes-container {
+    display: flex;
+    flex-wrap: wrap;    
+}
+
+.solucoes-item {
+    background-color: #df4b3a54;
+    color: #5E2019;
+    flex: 1 1 175px;
+    margin: 10px;
+    padding: 15px;
+    max-width: 300px;    
+    border-top: 8px solid;        
+}
+
+.solucoes-item p {
+    padding-top: 20px;
+    font-size: 1.25em;
+}
+
+.solucoes-item h2 {
+    font-size: 2em;
+    background-color: #df4b3a17;
+    border-radius: 0.2em;
+    padding: 60px 20px;   
+    text-align: center;
+}
+
+/* planos */
+
+.planos {
+    max-width: 960x;
+    background-color: #df4b3a17;
+    padding: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.planos-item {
+    flex: 1 1 260px;
+    border: 4px solid #5e20191c;
+    padding: 20px;
+    margin: 10px;
+}
+
+
+.planos-item h2 {
+    font-size: 2em;
+    color: #DF4A3A;
+    text-align: center;
+}
+
+.planos-item span {
+    max-width: 300px;
+    color: #5E2019;
+    margin: 20px auto;
+    display: block;
+    text-align: center;
+    padding: 10px 0 5px 0;
+    font-size: 1.35em;
+    border-bottom: 3px solid #df4b3a91;
+    border-top: 3px solid #df4b3a91;
+}
+
+.planos-item sup {
+    font-size: 1.25rem;
+}
+
+.planos-item ul {
+    max-width: 300px;
+    margin: 20px auto;
+    font-size: 1.15em;
+    font-weight: bold;
+    color: #5E2019;
+    font-style: italic;    
+}
+
+.planos-item li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;    
+
+}
+
+.planos-item li::after{
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    background: #DF4A3A;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.planos-item a {
+    max-width: 300px;
+    display: block;
+    margin: 20px auto;
+    border: 3px solid;
+    border-radius: 10px;
+    color:#DF4A3A;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    font-weight: bold;    
+    text-align: center;
+    padding-left: 15px 0;
+}
+
+.beneficios {
+    max-width: 960px;
+    margin: 60px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.beneficios-item {
+    flex: 1 1 2500px;
+    margin: 20px 10px;
+    color: #5E2019;
+    max-width: 300px;
+}
+
+.beneficios-item h2 {
+    font-size: 2em;    
+    margin-bottom: 20px;
+}
+
+.beneficios-item h2::before {
+     content: '';
+     display: inline-block;
+     width: 6px;
+     height: 23px;
+     background-color: #DF4A3A;
+     margin-right: 10px;
+
+}
+
+.newsletter {
+    background: #df4b3a21;
+    padding: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    color: #5E2019
+}
+
+.newsletter-info {
+    flex: 1 1 260px;
+    margin: 0 10px;
+}
+
+.newsletter-info h1 {
+    font-size: 2.25em;
+}
+
+.newsletter-info p {
+    font-size: 1.25em;
+    font-style: italic;
+    max-width: 230px;
+    margin-bottom: 10px;
+}
+
+.newsletter-form {
+    flex: 2 1 200px;
+    margin-bottom: 10px;
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.newsletter-form input {
+    flex: 3 1 200px;
+    max-width: 220px;
+    font-size: 1.25em;
+    color: #DF4A3A;
+    font-style: italic;
+    border: 4px solid #DF4A3A;
+    background: transparent;
+    padding: 15px 10px;
+    margin: 0 0 10px 0;
+    border-radius: 0px;
+    height: 60px;
+}
+
+.newsletter-form button {
+    flex: 1 1 200px;
+    max-width: 220px;
+    height: 60px;
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: #DF4A3A;
+    color: white;
+    margin: 0 10px 10 0;
+    cursor: pointer;
+    border: 0px;
+    padding: 15px 10px;
+}
+
+/*Footer*/
+
+.footer {
+    display: flex;
+    height: 200px;
+    align-items: center;
+    height: 130px;
+}
+
+.footer p {
+    flex: 1;
+    text-align: center;
+    font-size: 1em;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .newsletter-form button {
+        font-size: 1.5em;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .planos {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .beneficios-item {
+        text-align: center;
+    }
+}
+
+
+/* login.html */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 500px;
+    max-width: 800px;
+    /* border: 3px solid #5E2019; */
+    margin: auto;
+    margin-top: 50px;
+    background-color: #df4b3a18;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 400px;
+    width: 50%;
+    align-items: center;
+    background-color: #df4b3a09;
+    color: #5E2019;
+}
+
+.form h2 {
+    font-size: 2.25rem;
+    margin: 40px;
+    color: #DF4A3A;
+    font-weight: bold;
+}
+
+.form  a {
+    text-decoration: none;
+    font-weight: bold;
+    color:#5E2019;
+    margin-top: 10px;
+}
+
+.form  a:hover {
+    color: #DF4A3A;
+}
+
+.box {
+    padding: 12px;
+    width: 65%;
+    margin: 15px;    
+    border: 2px solid #5E2019;
+    border-radius: 20px;
+    outline: none;  
+}
+
+#submit {
+    padding: 12px 30px;    
+    max-width: 200px;
+    margin-top: 30px;
+    flex-shrink: 200px;
+    background-color:#5E2019;
+    color:white;
+    text-transform: uppercase;
+    font-size: 1.05em;
+    font-weight: bold;    
+    text-align: center;
+    padding-left: 15px 0;
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+#submit:hover {
+    cursor: pointer;    
+    color: #DF4A3A;
+}
+
+/* right side */
+
+.side {
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.side img {
+    max-width: 400px;
+    height: 400px;
+    padding-right: 15px;
+    flex: 1 1 160px;
+}
+
+@media (max-width: 800px) {
+    .side img {
+        height: 0;
+    }
+}
+
+/* cadastropessoas.html */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 500px;
+    max-width: 800px;
+    /* border: 3px solid #5E2019; */
+    margin: auto;
+    margin-top: 50px;
+    background-color: #df4b3a18;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 400px;
+    width: 50%;
+    align-items: center;
+    background-color: #df4b3a09;
+    color: #5E2019;
+}
+
+.form h2 {
+    font-size: 2.25rem;
+    margin: 40px;
+    color: #DF4A3A;
+    font-weight: bold;
+}
+
+.form  a {
+    text-decoration: none;
+    font-weight: bold;
+    color:#5E2019;
+    margin-top: 10px;
+}
+
+.form  a:hover {
+    color: #DF4A3A;
+} 
+
+.box {
+    padding: 12px;
+    width: 65%;
+    margin: 15px;    
+    border: 2px solid #5E2019;
+    border-radius: 20px;
+    outline: none;  
+}
+
+#avancar {
+    padding: 12px 30px;    
+    max-width: 150px;
+    margin-top: 0px;
+    flex-shrink: 200px;
+    background-color:#5E2019;
+    color:white;
+    text-transform: uppercase;
+    font-size: 1.05em;
+    font-weight: bold;    
+    text-align: center;
+    padding-left: 15px 0;
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+#finalzar:hover {
+    cursor: pointer;    
+    color: #DF4A3A;
+}
+/* cadastropessoasptdois.html */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 500px;
+    max-width: 800px;
+    /* border: 3px solid #5E2019; */
+    margin: auto;
+    margin-top: 50px;
+    background-color: #df4b3a18;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 400px;
+    width: 50%;
+    align-items: center;
+    background-color: #df4b3a09;
+    color: #5E2019;
+}
+
+.form h2 {
+    font-size: 2.25rem;
+    margin: 40px;
+    color: #DF4A3A;
+    font-weight: bold;
+}
+
+.form  a {
+    text-decoration: none;
+    font-weight: bold;
+    color:#5E2019;
+    margin-top: 10px;
+}
+
+.form  a:hover {
+    color: #DF4A3A;
+} 
+
+.box {
+    padding: 12px;
+    width: 65%;
+    margin: 15px;    
+    border: 2px solid #5E2019;
+    border-radius: 20px;
+    outline: none;  
+}
+
+#finalizar {
+    padding: 12px 30px;    
+    max-width: 155px;
+    margin-top: 0px;
+    flex-shrink: 200px;
+    background-color:#5E2019;
+    color:white;
+    text-transform: uppercase;
+    font-size: 1.05em;
+    font-weight: bold;    
+    text-align: center;
+    padding-left: 15px 0;
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+#avancar:hover {
+    cursor: pointer;    
+    color: #DF4A3A;
+}
