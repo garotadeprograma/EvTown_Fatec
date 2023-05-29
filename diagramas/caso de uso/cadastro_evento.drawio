@@ -1,0 +1,40 @@
+<mxfile host="65bd71144e">
+    <diagram id="p7srvX-NDT8vMN4-lV_J" name="Page-1">
+        <mxGraphModel dx="701" dy="616" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#FFCCCC" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#0d0c0c;strokeColor=#0d0c0c;" edge="1" parent="1" source="3" target="4">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#000000;strokeColor=#000000;" edge="1" parent="1" source="3" target="6">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#000000;strokeColor=#000000;" edge="1" parent="1" source="3" target="7">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" style="edgeStyle=none;html=1;entryX=0.055;entryY=0.315;entryDx=0;entryDy=0;entryPerimeter=0;fontColor=#000000;strokeColor=#000000;" edge="1" parent="1" source="3" target="8">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="shape=actor;whiteSpace=wrap;html=1;fillColor=#CC0000;fontColor=#000000;strokeColor=#BD7000;align=right;" vertex="1" parent="1">
+                    <mxGeometry x="80" y="180" width="40" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="Logar no sistema" style="ellipse;whiteSpace=wrap;html=1;fillColor=#CC0000;" vertex="1" parent="1">
+                    <mxGeometry x="370" y="30" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="&lt;font color=&quot;#000000&quot;&gt;Usuário&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="70" y="240" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="Informar dados básicos do evento" style="ellipse;whiteSpace=wrap;html=1;fillColor=#CC0000;" vertex="1" parent="1">
+                    <mxGeometry x="370" y="130" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="Selecionar serviços básicos" style="ellipse;whiteSpace=wrap;html=1;fillColor=#CC0000;" vertex="1" parent="1">
+                    <mxGeometry x="370" y="230" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="Selecionar serviços específicos" style="ellipse;whiteSpace=wrap;html=1;fillColor=#CC0000;" vertex="1" parent="1">
+                    <mxGeometry x="370" y="330" width="120" height="80" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

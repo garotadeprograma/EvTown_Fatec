@@ -373,7 +373,7 @@ img {
 
 /* login.html */
 
-.container {
+.login-container {
     display: flex;
     flex-wrap: wrap;
     height: 500px;
@@ -462,4 +462,26 @@ img {
     .side img {
         height: 0;
     }
+}
+
+/*cadastro evento*/
+
+.small-area {
+    width: 70%;
+    display: flex;
+}
+
+.small-area input {
+    flex: 1;
+}
+
+.cadastro-evento-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 700px;
+    max-width: 800px;
+    /* border: 3px solid #5E2019; */
+    margin: auto;
+    margin-top: 50px;
+    background-color: #df4b3a18;
 }

@@ -2,19 +2,18 @@
     ViewData["Title"] = "Cadastro";
 }
 
-<section class="cadastro">
-    <div class="center-info">
-        <form action="" class="form">
-            <h2>CADASTRO</h2>
-            <input type="text" name="nome" id="nome" class="box" placeholder="Nome">
-            <input type="text" name="cpf" id="cpf" class="box" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="CPF">
-            <input type="date" name="dataNascimento" id="dataNascimento" class="box" placeholder="Data de Nascimento">
-            <input type="tel" id="telefone" name="telefone" class="box" placeholder="Celular" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}">
-            <input type="avancar" id="avancar" value="AVANÇAR">
-        </form>
+<section class="container login-container">
+    <form action="" class="form">
+        <h2>Cadastro</h2>
+        <input type="text" name="nome" id="nome" class="box" placeholder="Nome">
+        <input type="text" name="cpf" id="cpf" class="box" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="CPF">
+        <input type="date" name="dataNascimento" id="dataNascimento" class="box" placeholder="Data de Nascimento">
+        <input type="tel" id="telefone" name="telefone" class="box" placeholder="Celular" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}">
+        <input type="submit" id="submit" value="Avançar" asp-controller="Cadastro" asp-action="CadastrarUsuario">
+    </form>
 
-        <div class="side">
-            <img src="img/market.png" alt="">
-        </div>
+    <div class="side">
+        <img src="img/market.png" alt="">
     </div>
+
 </section>

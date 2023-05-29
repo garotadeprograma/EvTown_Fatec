@@ -16,8 +16,8 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\acsil\OneDrive\Documentos\_PROGRAMACAO\Faculdade\trabalho braz\mvc\EvTown\EvTown
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/acsil/OneDrive/Documentos/_PROGRAMACAO/Faculdade/trabalho braz/mvc/EvTown/EvTown/Views/Cadastro/AdicionarUsuario.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FkYXN0cm9cQWRpY2lvbmFyVXN1YXJpby5jc2h0bWw=
+[C:/Users/acsil/OneDrive/Documentos/_PROGRAMACAO/Faculdade/trabalho braz/mvc/EvTown/EvTown/Views/Cadastro/CadastrarUsuario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FkYXN0cm9cQ2FkYXN0cmFyVXN1YXJpby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/acsil/OneDrive/Documentos/_PROGRAMACAO/Faculdade/trabalho braz/mvc/EvTown/EvTown/Views/Cadastro/Index.cshtml]

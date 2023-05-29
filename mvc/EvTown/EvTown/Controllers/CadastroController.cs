@@ -4,9 +4,14 @@ namespace EvTown.Controllers
 {
     public class CadastroController : Controller
     {
-        public string Index()
+        public IActionResult Index()
         {
-            return "sucesso";
+            return View();
+        }
+
+        public IActionResult CadastrarUsuario()
+        {
+            return View();
         }
     }
 }

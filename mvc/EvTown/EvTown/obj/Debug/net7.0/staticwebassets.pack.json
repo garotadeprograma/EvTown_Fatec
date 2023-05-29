@@ -5,20 +5,20 @@
       "PackagePath": "staticwebassets\\EvTown.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\acsil\\OneDrive\\Documentos\\_PROGRAMACAO\\Faculdade\\trabalho braz\\mvc\\EvTown\\EvTown\\wwwroot\\css\\home-style.css",
-      "PackagePath": "staticwebassets\\css\\home-style.css"
-    },
-    {
-      "Id": "C:\\Users\\acsil\\OneDrive\\Documentos\\_PROGRAMACAO\\Faculdade\\trabalho braz\\mvc\\EvTown\\EvTown\\wwwroot\\css\\login-style.css",
-      "PackagePath": "staticwebassets\\css\\login-style.css"
-    },
-    {
       "Id": "C:\\Users\\acsil\\OneDrive\\Documentos\\_PROGRAMACAO\\Faculdade\\trabalho braz\\mvc\\EvTown\\EvTown\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\Users\\acsil\\OneDrive\\Documentos\\_PROGRAMACAO\\Faculdade\\trabalho braz\\mvc\\EvTown\\EvTown\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
       "Id": "C:\\Users\\acsil\\OneDrive\\Documentos\\_PROGRAMACAO\\Faculdade\\trabalho braz\\mvc\\EvTown\\EvTown\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\acsil\\OneDrive\\Documentos\\_PROGRAMACAO\\Faculdade\\trabalho braz\\mvc\\EvTown\\EvTown\\wwwroot\\img\\20943642.jpg",
+      "PackagePath": "staticwebassets\\img\\20943642.jpg"
     },
     {
       "Id": "C:\\Users\\acsil\\OneDrive\\Documentos\\_PROGRAMACAO\\Faculdade\\trabalho braz\\mvc\\EvTown\\EvTown\\wwwroot\\img\\EvTown_Fatec-master.rar",
@@ -59,6 +59,34 @@
     {
       "Id": "C:\\Users\\acsil\\OneDrive\\Documentos\\_PROGRAMACAO\\Faculdade\\trabalho braz\\mvc\\EvTown\\EvTown\\wwwroot\\img\\EvTown_Fatec-master\\login.html",
       "PackagePath": "staticwebassets\\img\\EvTown_Fatec-master\\login.html"
+    },
+    {
+      "Id": "C:\\Users\\acsil\\OneDrive\\Documentos\\_PROGRAMACAO\\Faculdade\\trabalho braz\\mvc\\EvTown\\EvTown\\wwwroot\\img\\calendario-3d-para-organizacao.zip",
+      "PackagePath": "staticwebassets\\img\\calendario-3d-para-organizacao.zip"
+    },
+    {
+      "Id": "C:\\Users\\acsil\\OneDrive\\Documentos\\_PROGRAMACAO\\Faculdade\\trabalho braz\\mvc\\EvTown\\EvTown\\wwwroot\\img\\event.svg",
+      "PackagePath": "staticwebassets\\img\\event.svg"
+    },
+    {
+      "Id": "C:\\Users\\acsil\\OneDrive\\Documentos\\_PROGRAMACAO\\Faculdade\\trabalho braz\\mvc\\EvTown\\EvTown\\wwwroot\\img\\event.zip",
+      "PackagePath": "staticwebassets\\img\\event.zip"
+    },
+    {
+      "Id": "C:\\Users\\acsil\\OneDrive\\Documentos\\_PROGRAMACAO\\Faculdade\\trabalho braz\\mvc\\EvTown\\EvTown\\wwwroot\\img\\event\\20943642.eps",
+      "PackagePath": "staticwebassets\\img\\event\\20943642.eps"
+    },
+    {
+      "Id": "C:\\Users\\acsil\\OneDrive\\Documentos\\_PROGRAMACAO\\Faculdade\\trabalho braz\\mvc\\EvTown\\EvTown\\wwwroot\\img\\event\\License free.txt",
+      "PackagePath": "staticwebassets\\img\\event\\License free.txt"
+    },
+    {
+      "Id": "C:\\Users\\acsil\\OneDrive\\Documentos\\_PROGRAMACAO\\Faculdade\\trabalho braz\\mvc\\EvTown\\EvTown\\wwwroot\\img\\event\\License premium.txt",
+      "PackagePath": "staticwebassets\\img\\event\\License premium.txt"
+    },
+    {
+      "Id": "C:\\Users\\acsil\\OneDrive\\Documentos\\_PROGRAMACAO\\Faculdade\\trabalho braz\\mvc\\EvTown\\EvTown\\wwwroot\\img\\event\\event.jpg",
+      "PackagePath": "staticwebassets\\img\\event\\event.jpg"
     },
     {
       "Id": "C:\\Users\\acsil\\OneDrive\\Documentos\\_PROGRAMACAO\\Faculdade\\trabalho braz\\mvc\\EvTown\\EvTown\\wwwroot\\img\\grocery.png",
