@@ -2,8 +2,8 @@
 {
     public class Usuario
     {
-        public int ususario_id { get; set; }
-        public string email { get; set; }
-        public string senha { get; set; }     
+        public Guid Id { get; set; }
+        public string Email { get; set; }
+        public string Senha { get; set; }     
     }
 }

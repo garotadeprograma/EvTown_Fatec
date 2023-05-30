@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Login";
+}
+
+
+<section class="login-container">
+    <form action="Get" class="form">
+        <h2>Login</h2>
+        <input type="email" name="email" id="email" class="box" placeholder="Email">
+        <input type="password" name="senha" id="senha" class="box" placeholder="Senha">
+        <input type="submit" id="submit" value="Entrar" asp-controller="Usuario" asp-action="Get">
+        <a href="">Esqueci minha senha</a>
+        <a asp-action="Index" asp-controller="Cadastro">Cadastre-se</a>
+    </form>
+
+
+    <div class="side">
+        <img src="img/market.png" alt="">
+    </div>
+
+</section>

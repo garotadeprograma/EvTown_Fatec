@@ -1,37 +1,32 @@
-﻿using EvTown.Models;
+﻿using EvTown.Data;
+using EvTown.Interface;
+using EvTown.Models;
+using Microsoft.EntityFrameworkCore;
 using Npgsql;
 using System.Data;
 
 namespace EvTown.Repository
 {
-    public class UsuarioRepository
+    public class UsuarioRepository : IUsuarioRepository
     {
-        private readonly static string _connectionString = "Server=localhost;Port=5432;Database=Cadastro;User Id=postgres;Password=admin";
+        private readonly DataContext _context;
 
-        public bool ValidarUsuario(Usuario usuario)
+        public UsuarioRepository(DataContext context)
         {
-            if(usuario.email == null || usuario.senha == null) 
-                return false;
+            _context = context;
+        }
+        
+        public Usuario Get(Usuario usuario)
+        {
+            return _context.Usuario.Where(u => u.Email == usuario.Email && u.Senha == usuario.Senha).FirstOrDefault();
+        }
 
-            var connection = new NpgsqlConnection(_connectionString);
-            connection.Open();
-            NpgsqlCommand command = connection.CreateCommand();
-            command.CommandType = CommandType.Text;
-            command.CommandText = "SELECT * FROM USUARIO WHERE email = @email and senha = @senha";
-            command.Parameters.AddWithValue("@email", usuario.email);
-            command.Parameters.AddWithValue("@senha", usuario.senha);
-
-            NpgsqlDataReader reader = command.ExecuteReader();
-
-            if (!reader.HasRows)            
-                return false;            
-
+        public bool Create(Usuario usuario)
+        {
+            _context.Add(usuario);
+            _context.SaveChanges();
             return true;
         }
 
-        public void ResgistrarLogin(Usuario usuario)
-        {
-
-        }
     }
 }

@@ -1,0 +1,67 @@
+﻿@model IEnumerable<EvTown.Models.Evento>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<section class="lista-evento-container">
+
+    <table class="table">
+
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Nome)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Endereco)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Categoria)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Acesso)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Pagamento)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DataEvento)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+
+        <tbody class="tbody">
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Nome)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Endereco)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Categoria)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Acesso)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Pagamento)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DataEvento)
+                    </td>
+                    
+                </tr>
+            }
+        </tbody>
+        <a asp-controller="Eventos" asp-action="Create">+</a>
+
+    </section>
+<div>
+    <a asp-action="Index" asp-controller="AreaUsuario">Voltar</a>
+</div>
+    
+

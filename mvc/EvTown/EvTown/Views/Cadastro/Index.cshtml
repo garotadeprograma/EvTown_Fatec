@@ -2,14 +2,16 @@
     ViewData["Title"] = "Cadastro";
 }
 
-<section class="container login-container">
+<section class="cadastro-container">
     <form action="" class="form">
         <h2>Cadastro</h2>
         <input type="text" name="nome" id="nome" class="box" placeholder="Nome">
         <input type="text" name="cpf" id="cpf" class="box" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="CPF">
-        <input type="date" name="dataNascimento" id="dataNascimento" class="box" placeholder="Data de Nascimento">
-        <input type="tel" id="telefone" name="telefone" class="box" placeholder="Celular" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}">
-        <input type="submit" id="submit" value="Avançar" asp-controller="Cadastro" asp-action="CadastrarUsuario">
+        <input type="tel" name="celular" id="celular" class="box" placeholder="Celular">
+        <input type="email" name="email" id="email" class="box" placeholder="Email">
+        <input type="password" name="senha" id="senha" class="box" placeholder="Senha">
+        <input type="submit" id="submit" value="Cadastrar" asp-controller="Cadastro" asp-action="CadastrarPessoa">
+
     </form>
 
     <div class="side">

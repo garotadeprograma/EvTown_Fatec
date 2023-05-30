@@ -162,9 +162,10 @@ img {
         padding: 60px 20px;
         text-align: center;
     }
-
+.insights a, .integracao a, .pagamento a {
+    color: #5E2019;
+}
 /* planos */
-
 .planos {
     max-width: 960x;
     background-color: #df4b3a17;
@@ -368,19 +369,17 @@ img {
     }
 }
 
-.container {
+
+/* login.html */
+.login-container {
     display: flex;
     flex-wrap: wrap;
+    height: 500px;
     max-width: 800px;
     /* border: 3px solid #5E2019; */
     margin: auto;
     margin-top: 50px;
     background-color: #df4b3a18;
-}
-
-/* login.html */
-.login-container {    
-    height: 500px;    
 }
 
 .form {
@@ -483,4 +482,99 @@ img {
     margin: auto;
     margin-top: 50px;
     background-color: #df4b3a18;
+}
+
+.cadastro-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 800px;
+    max-width: 800px;
+    /* border: 3px solid #5E2019; */
+    margin: auto;
+    margin-top: 50px;
+    background-color: #df4b3a18;
+}
+
+.lista-evento-container {
+    height: 300px;
+    width: 960px;
+    margin: 0 auto;
+    background-color: #df4b3a18;    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.table {
+    color: #DF4A3A;
+    padding-top: 50px;
+}
+
+.tbody {
+    padding: 0 10px;
+}
+
+.tbody a {
+    color: #DF4A3A;
+}
+
+tbody a:hover {
+    cursor: pointer;
+    color: #5E2019;
+}
+
+#small-submit {
+    flex: 1 1 40px;
+    padding: 10px;
+    max-height: 60px;
+    width: 40px;
+    margin: 20px;    
+    background-color: #5E2019;
+    color: white;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: bold;
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+#small-submit:hover {
+    cursor: pointer;
+    color: #DF4A3A;
+}
+
+.create-evento-container {
+    height: 600px;
+    max-width: 800px;
+    /* border: 3px solid #5E2019; */
+    margin: auto;
+    margin-top: 50px;
+    background-color: #df4b3a18;
+}
+
+.form-group {
+    margin: 0 auto;
+    max-width: 50%;
+}
+
+.form-group-btn {
+    margin-top: 10px;
+}
+
+.full-form {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 400px; 
+    height:600px; 
+    align-items: center;
+    background-color: #df4b3a09;
+    color: #5E2019;
+}
+
+.full-form a {
+    color: #DF4A3A;
+}
+
+.full-form h2 {
+    margin-bottom: 20px;
 }
