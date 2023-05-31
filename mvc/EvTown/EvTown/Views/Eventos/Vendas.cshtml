@@ -1,0 +1,60 @@
+﻿@model IEnumerable<EvTown.Models.Venda>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<section class="lista-evento-container">
+
+    <table class="table">
+
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Id)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.EventoId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ParceiroId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DataEvento)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Valor)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+
+        <tbody class="tbody">
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Id)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.EventoId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ParceiroId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DataEvento)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Valor)
+                    </td>
+                    
+                </tr>
+            }
+        </tbody>
+
+</section>
+<div>
+    <a asp-action="Index" asp-controller="AreaUsuario">Voltar</a>
+</div>
+
+

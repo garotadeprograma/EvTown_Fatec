@@ -1,0 +1,156 @@
+﻿<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/series-label.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+<section class="container">
+    <figure class="highcharts-figure">
+        <div id="container"></div>
+    </figure>
+</section>
+
+<section class="container">
+    <figure class="highcharts-figure1">
+        <div id="container1"></div>
+    </figure>
+</section>
+
+
+<script>
+    Highcharts.chart('container', {
+
+        title: {
+            text: 'Tipos de serviços consumidos durante o evento',
+            align: 'left'
+        },
+        
+        yAxis: {
+            title: {
+                text: 'Participantes'
+            }
+        },
+
+        xAxis: {
+            accessibility: {
+                rangeDescription: 'Range: 12h ás 20h'
+            }
+        },
+
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'middle'
+        },
+
+        plotOptions: {
+            series: {
+                label: {
+                    connectorAllowed: false
+                },
+                pointStart: 2010
+            }
+        },
+
+        series: [{
+            name: 'Alimentação',
+            data: [43934, 48656, 65165, 81827, 112143, 142383,
+                171533, 165174, 155157, 161454, 154610]
+        }, {
+            name: 'Souvenirs',
+            data: [24916, 37941, 29742, 29851, 32490, 30282,
+                38121, 36885, 33726, 34243, 31050]
+        }, {
+            name: 'Consumíveis',
+            data: [11744, 30000, 16005, 19771, 20185, 24377,
+                32147, 30912, 29243, 29213, 25663]
+        }, {
+            name: 'Serviços',
+            data: [null, null, null, null, null, null, null,
+                null, 11164, 11218, 10077]
+        }, {
+            name: 'Other',
+            data: [21908, 5548, 8105, 11248, 8989, 11816, 18274,
+                17300, 13053, 11906, 10073]
+        }],
+
+        responsive: {
+            rules: [{
+                condition: {
+                    maxWidth: 600
+                },
+                chartOptions: {
+                    legend: {
+                        layout: 'horizontal',
+                        align: 'center',
+                        verticalAlign: 'bottom'
+                    }
+                }
+            }]
+        }
+
+    });
+
+
+
+    Highcharts.chart('container1', {
+        chart: {
+            type: 'area'
+        },
+        title: {
+            text: 'Consumo por Faixa etária dos participantes',
+            align: 'left'
+        },
+        
+        yAxis: {
+            title: {
+                useHTML: true,
+                text: 'Valor do consumo'
+            }
+        },
+        tooltip: {
+            shared: true,
+            headerFormat: '<span style="font-size:12px"><b>{point.key}</b></span><br>'
+        },
+        plotOptions: {
+            series: {
+                pointStart: 18
+            },
+            area: {
+                stacking: 'normal',
+                lineColor: '#666666',
+                lineWidth: 1,
+                marker: {
+                    lineWidth: 1,
+                    lineColor: '#666666'
+                }
+            }
+        },
+        series: [{
+            name: '18 - 24 anos',
+            data: [13234, 12729, 11533, 17798, 10398, 12811, 15483, 16196, 16214]
+        }, {
+            name: '25 - 35 anos',
+            data: [6685, 6535, 6389, 6384, 6251, 5725, 5631, 5047, 5039]
+
+        }, {
+            name: '36 - 45 anos',
+            data: [4752, 4820, 4877, 4925, 5006, 4976, 4946, 4911, 4913]
+        }, {
+            name: '50 - 60 anos',
+            data: [3164, 3541, 3898, 4115, 3388, 3569, 3887, 4593, 1550]
+
+        }, {
+            name: '60 >',
+            data: [2019, 2189, 2150, 2217, 2175, 2257, 2344, 2176, 2186]
+        }]
+    });
+
+</script>
+

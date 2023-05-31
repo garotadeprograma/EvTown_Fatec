@@ -1,14 +1,26 @@
-﻿@{
+﻿@model EvTown.Models.Usuario
+
+@{
     ViewData["Title"] = "Login";
 }
 
 
 <section class="login-container">
-    <form action="Get" class="form">
+    <form action="GetUser" class="form">
         <h2>Login</h2>
-        <input type="email" name="email" id="email" class="box" placeholder="Email">
-        <input type="password" name="senha" id="senha" class="box" placeholder="Senha">
-        <input type="submit" id="submit" value="Entrar" asp-controller="Usuario" asp-action="Get">
+        <div class="form-group">
+            <label asp-for="Email" class="control-label"></label>
+            <input asp-for="Email" class="form-control" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Senha" class="control-label"></label>
+            <input asp-for="Senha" class="form-control" />
+            <span asp-validation-for="Senha" class="text-danger"></span>
+        </div>
+
+        <input type="submit" id="submit" value="Entrar" asp-controller="Usuario" asp-action="GetUser">
         <a href="">Esqueci minha senha</a>
         <a asp-action="Index" asp-controller="Cadastro">Cadastre-se</a>
     </form>

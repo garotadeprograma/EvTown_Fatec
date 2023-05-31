@@ -14,6 +14,7 @@ namespace EvTown.Data
         public DbSet<Evento> Evento { get; set; }
         public DbSet<EventoParceiro> EventoParceiro { get; set; }
         public DbSet<Usuario> Usuario { get; set; }
+        public DbSet<Venda> Venda { get; set; }
 
     }
 }

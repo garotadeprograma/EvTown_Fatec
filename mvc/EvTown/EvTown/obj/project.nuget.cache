@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "1LjXc0RPOsE1U8vYC1RmQhSK5EnFjDo7np4XCDBJ6/6b+ThxXfpPuKJ6NDu8n5BnNBAp79g+nlSv6aI1W6JuJA==",
+  "dgSpecHash": "t0HMfG72WhB8d5F/xuH2D9u0x3beZ982UbFr+AHQg8IKbdfkA4F0RZ7p3N73k1m+jhdokWbfvOD/ql7BkzBPLg==",
   "success": true,
   "projectFilePath": "C:\\Users\\acsil\\OneDrive\\Documentos\\_PROGRAMACAO\\Faculdade\\trabalho braz\\mvc\\EvTown\\EvTown\\EvTown.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\acsil\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\acsil\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\acsil\\.nuget\\packages\\highsoft.highcharts\\10.3.3.2\\highsoft.highcharts.10.3.3.2.nupkg.sha512",
     "C:\\Users\\acsil\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\acsil\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\6.0.11\\microsoft.aspnetcore.razor.language.6.0.11.nupkg.sha512",
     "C:\\Users\\acsil\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",

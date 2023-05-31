@@ -10,15 +10,18 @@ using EvTown.Models;
 using EvTown.Repository;
 using EvTown.Interface;
 using System.Diagnostics;
+using Microsoft.Extensions.Logging;
 
 namespace EvTown.Controllers
 {
     public class EventosController : Controller
     {
         private readonly IEventoRepository eventoRepository;
-        public EventosController(IEventoRepository eventoRepository)
+        private readonly IVendaRepository vendaRepository;
+        public EventosController(IEventoRepository eventoRepository, IVendaRepository vendaRepository)
         {
             this.eventoRepository = eventoRepository;
+            this.vendaRepository = vendaRepository;
         }
 
         // GET: Eventos
@@ -32,25 +35,6 @@ namespace EvTown.Controllers
                 return View("Create");
         }
 
-        //// GET: Eventos/Details/5
-        //public async Task<IActionResult> Details(Guid? id)
-        //{
-        //    if (id == null || _context.Evento == null)
-        //    {
-        //        return NotFound();
-        //    }
-
-        //    var evento = await _context.Evento
-        //        .FirstOrDefaultAsync(m => m.Id == id);
-        //    if (evento == null)
-        //    {
-        //        return NotFound();
-        //    }
-
-        //    return View(evento);
-        //}
-
-        //// GET: Eventos/Create
         public IActionResult Create()
         {
             return View();
@@ -68,72 +52,20 @@ namespace EvTown.Controllers
             return View(evento);
         }
 
-        public IActionResult Edit(Guid id)
-        {
-            var evento = eventoRepository.Get(id);
 
-            if (evento == null)
-            {
-                return NotFound();
-            }
-            return View(evento);
+        public IActionResult Vendas()
+        {
+            var vendas = vendaRepository.Get();
+
+            if(vendas?.Count > 0)
+                return View(vendas);
+            else
+                return View("Error");
         }
 
-        [HttpPost]
-        public async Task<IActionResult> Edit(Guid id, [Bind("Id,Nome,Endereco,Categoria,Acesso,Pagamento,DataEvento")] Evento evento)
+        public IActionResult Insight()
         {
-            var eventoBd = eventoRepository.Get(id);
-
-            if (eventoBd == null)
-            {
-                return NotFound();
-            }
-
-            eventoRepository.Update(eventoBd);
-                
-            return RedirectToAction(nameof(Index));
-            
+            return View();
         }
-
-        //// GET: Eventos/Delete/5
-        //public async Task<IActionResult> Delete(Guid? id)
-        //{
-        //    if (id == null || _context.Evento == null)
-        //    {
-        //        return NotFound();
-        //    }
-
-        //    var evento = await _context.Evento
-        //        .FirstOrDefaultAsync(m => m.Id == id);
-        //    if (evento == null)
-        //    {
-        //        return NotFound();
-        //    }
-
-        //    return View(evento);
-        //}
-
-        //// POST: Eventos/Delete/5
-        //[HttpPost, ActionName("Delete")]
-        //public async Task<IActionResult> DeleteConfirmed(Guid id)
-        //{
-        //    if (_context.Evento == null)
-        //    {
-        //        return Problem("Entity set 'DataContext.Evento'  is null.");
-        //    }
-        //    var evento = await _context.Evento.FindAsync(id);
-        //    if (evento != null)
-        //    {
-        //        _context.Evento.Remove(evento);
-        //    }
-
-        //    await _context.SaveChangesAsync();
-        //    return RedirectToAction(nameof(Index));
-        //}
-
-        //private bool EventoExists(Guid id)
-        //{
-        //  return (_context.Evento?.Any(e => e.Id == id)).GetValueOrDefault();
-        //}
     }
 }

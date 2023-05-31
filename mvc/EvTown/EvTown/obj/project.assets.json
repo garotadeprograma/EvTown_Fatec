@@ -46,6 +46,18 @@
           }
         }
       },
+      "Highsoft.Highcharts/10.3.3.2": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Highcharts.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Highcharts.dll": {}
+        }
+      },
       "Humanizer.Core/2.14.1": {
         "type": "package",
         "compile": {
@@ -3717,6 +3729,19 @@
         "azureicon.png",
         "lib/netstandard2.0/Azure.Identity.dll",
         "lib/netstandard2.0/Azure.Identity.xml"
+      ]
+    },
+    "Highsoft.Highcharts/10.3.3.2": {
+      "sha512": "jld5zOVaqO5vhv2OsYY4G2GTYCFz41xToQUVxBKK953QW06Zp/nOXH00C9C3JJ7Y/IhIta6b3leJfrfuUM76BQ==",
+      "type": "package",
+      "path": "highsoft.highcharts/10.3.3.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "highsoft.highcharts.10.3.3.2.nupkg.sha512",
+        "highsoft.highcharts.nuspec",
+        "lib/netstandard2.0/Highcharts.dll",
+        "license.txt"
       ]
     },
     "Humanizer.Core/2.14.1": {
@@ -10644,6 +10669,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "Highsoft.Highcharts >= 10.3.3.2",
       "Microsoft.EntityFrameworkCore >= 7.0.5",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.5",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.5",
@@ -10699,6 +10725,10 @@
       "net7.0": {
         "targetAlias": "net7.0",
         "dependencies": {
+          "Highsoft.Highcharts": {
+            "target": "Package",
+            "version": "[10.3.3.2, )"
+          },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[7.0.5, )"

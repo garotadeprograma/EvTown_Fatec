@@ -1,4 +1,5 @@
-﻿using EvTown.Models;
+﻿using EvTown.Interface;
+using EvTown.Models;
 using EvTown.Repository;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
@@ -7,30 +8,27 @@ namespace EvTown.Controllers
 {
     public class LoginController : Controller
     {
-        private readonly UsuarioRepository usuario_repository;
+        private readonly IUsuarioRepository usuario_repository;
 
-        public LoginController()
+        public LoginController(IUsuarioRepository usuario_repository)
         {
-            this.usuario_repository = new UsuarioRepository();
+            this.usuario_repository = usuario_repository;
         }
         public IActionResult Index()
         {
             return View();
         }
 
-        public string ValidarLogin(Usuario usuario)
+        public IActionResult ValidarLogin(Usuario usuario)
         {
+            var u = usuario_repository.Get(usuario);
 
-            if(usuario_repository.ValidarUsuario(usuario))
+            if (usuario_repository.Get(usuario) == null)
             {
-                //return RedirectToAction("Index", "Home");
-                return "sucesso";
+                return View("Error");
             };
 
-            //criar página de erro
-
-            //return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-            return "erro";
+            return RedirectToAction("Index", "AreaUsuario");
         }
 
     }

@@ -8,12 +8,21 @@
 
   <ItemGroup>
     <Compile Remove="IRepository\**" />
+    <Compile Remove="Views\Usuario\**" />
     <Content Remove="IRepository\**" />
+    <Content Remove="Views\Usuario\**" />
     <EmbeddedResource Remove="IRepository\**" />
+    <EmbeddedResource Remove="Views\Usuario\**" />
     <None Remove="IRepository\**" />
+    <None Remove="Views\Usuario\**" />
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Remove="Controllers\UsuarioController.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Highsoft.Highcharts" Version="10.3.3.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.5">

@@ -91,6 +91,33 @@ namespace EvTown.Migrations
 
                     b.ToTable("Usuario");
                 });
+
+            modelBuilder.Entity("EvTown.Models.Venda", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("DataEvento")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("EventoId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ParceiroId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("Valor")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Venda");
+                });
 #pragma warning restore 612, 618
         }
     }

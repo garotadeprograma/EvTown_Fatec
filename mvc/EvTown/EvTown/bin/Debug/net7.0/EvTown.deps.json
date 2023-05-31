@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v7.0": {
       "EvTown/1.0.0": {
         "dependencies": {
+          "Highsoft.Highcharts": "10.3.3.2",
           "Microsoft.EntityFrameworkCore": "7.0.5",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.5",
           "Microsoft.EntityFrameworkCore.Tools": "7.0.5",
@@ -49,6 +50,17 @@
           "lib/netstandard2.0/Azure.Identity.dll": {
             "assemblyVersion": "1.6.0.0",
             "fileVersion": "1.600.22.20503"
+          }
+        }
+      },
+      "Highsoft.Highcharts/10.3.3.2": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Highcharts.dll": {
+            "assemblyVersion": "10.3.3.2",
+            "fileVersion": "10.3.3.2"
           }
         }
       },
@@ -2306,6 +2318,13 @@
       "sha512": "sha512-EycyMsb6rD2PK9P0SyibFfEhvWWttdrYhyPF4f41uzdB/44yQlV+2Wehxyg489Rj6gbPvSPgbKq0xsHJBhipZA==",
       "path": "azure.identity/1.6.0",
       "hashPath": "azure.identity.1.6.0.nupkg.sha512"
+    },
+    "Highsoft.Highcharts/10.3.3.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jld5zOVaqO5vhv2OsYY4G2GTYCFz41xToQUVxBKK953QW06Zp/nOXH00C9C3JJ7Y/IhIta6b3leJfrfuUM76BQ==",
+      "path": "highsoft.highcharts/10.3.3.2",
+      "hashPath": "highsoft.highcharts.10.3.3.2.nupkg.sha512"
     },
     "Humanizer.Core/2.14.1": {
       "type": "package",
